@@ -1,0 +1,70 @@
+h1 {
+    color: cadetblue;
+    font-size: 20pt;
+    font-family: cursive;
+    border-style: double;
+    border-color: burlywood;
+    background-color: azure;
+    
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+img {
+    float:right;
+    padding: inherit;
+    margin: auto;
+}
+
+
+h3 {
+    color: darkolivegreen;
+    font-size: 12pt;
+   
+}
+
+footer {
+    font-size: 10pt;
+    border-top-style: solid;
+   
+}
+
+a:link {
+    color: darkblue;
+    text-decoration: none;
+    font-size: 10pt;
+}
+a:hover {
+    color:darkslateblue;
+}
+a:focus {
+    color:darkgray;
+}
+a:visited {
+    color: crimson;
+}
+a:active {
+    color: darkgreen;
+}
+
+p:not(.different) {
+  font-size: 12pt;
+    color:darkred;
+    flex-flow: column;
+    
+}
+
+.west {
+    color:cornflowerblue;
+}
+
+.mizzou {
+    color:darkgoldenrod;
+   
+}
+
+main li {
+    font-style: italic
+}
