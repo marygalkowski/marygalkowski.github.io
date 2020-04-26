@@ -1,0 +1,131 @@
+
+
+#nav_menu {
+    top: 2px;
+    margin-top: 0;
+	width:900px;
+	font-family: sans-serif;
+    padding:5px 0 5px 0;
+    /*margin-top: 0;
+	width:900px;
+	font-family: sans-serif;
+    padding:5px 0 5px 0;*/
+}
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0; /*I moved margin and padding here to be on the first <ul> element*/
+    padding: 0;
+    /*position: relative; should be part of the first list's li*/
+}
+
+#nav_menu ul li { float: left;
+    border:1px solid #000;
+    font-size: 16px;
+    text-align: center; /*I moved the text related styling to be together*/
+    position: relative;
+}
+
+/*#nav_menu li {  
+
+this is a duplicate of the one above.
+    
+}*/
+
+#nav_menu a {
+	display:inline-block; /*to display in a line this should be inline-block;*/
+    text-decoration:none;
+    line-height: 32px;
+	background-color:darkolivegreen;
+	color:white;
+    padding: 8px;
+}
+
+#nav_menu a:hover {
+	background-color:beige;
+	color:darkolivegreen;
+}
+
+
+
+#nav_menu ul {
+    list-style-type: none;
+    position:relative; 
+    
+}
+
+#nav_menu ul li { float: left;
+}
+
+#nav_menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    width:70.6px;
+}
+
+#nav_menu ul ul li {
+    float:none;
+}
+
+#nav_menu ul li:hover > ul {
+    display: block;}
+
+
+#nav_menu > ul::after {
+    content: "";
+    display: block;
+    clear:both;
+}
+
+nav ul>li ul {
+position: absolute;
+margin-top: 0;
+display: none;
+}
+
+/*special hover to display the drop-down*/
+nav>ul>li:hover>ul{
+display: block;
+    width: 100%;
+}
+
+
+    
+label {
+    margin:auto;
+    display:none;
+    
+}
+#toggle {
+    display:none;
+}
+
+
+
+
+@media only screen and (max-width: 500px)
+{
+    body{width: 500px;}
+    label {display: block; cursor: pointer; text-align: left; line-height: 50px;}
+
+    
+#nav_mobile { 
+        text-align: center;
+        width: 500px;
+        display: none;
+}
+
+
+
+#nav_mobile a {
+	display:block; 
+
+}
+    #toggle:checked + #nav_mobile {display: block;}
+
+
+    
+    }
+
+
+
