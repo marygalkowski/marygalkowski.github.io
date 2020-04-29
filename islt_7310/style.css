@@ -8,6 +8,16 @@ School/Term:  University of Missouri, Spring 2020
 
 Validation Date: April 11, 2020 */
 
+@font-face { 
+
+font-family: 'Quicksand', sans-serif; /*this is where we give our font a name so we can use it!*/
+
+src: url(quicksand.ttf); /*remember this is how we link to files in CSS!*/
+
+}
+
+blockquote {font-family: 'Quicksand', serif; } 
+
 h1 {
     color: cadetblue;
     font-size: 20pt;
@@ -146,4 +156,41 @@ main p:first-child::first-letter {
         width:800px;
     }
     
+}
+
+
+    
+@media print {
+         
+    h1,h3{
+        color:black;
+        font-family:sans-serif;
+    }
+    
+    .west, .mizzou {
+       color:black; 
+        font-family:sans-serif;
+    }
+    
+    p:not(.different){
+        color:black;
+        font-family:sans-serif;
+    }
+    
+    a:link {
+    color: black;
+    }
+        
+    footer{
+        font-family:sans-serif;
+    }
+            .noprint {
+                visibility: hidden;
+            }
+            
+            
+            
+        }
+    
+
 }
