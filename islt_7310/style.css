@@ -65,7 +65,7 @@ footer {
     font-size: 10pt;
     border-top-style: solid;
     padding:5px;
-    background-image: image(background image.jpg);
+    
         
    
 }
@@ -140,8 +140,16 @@ main p:first-child::first-letter {
 .box{
     
     background-image: url(images/footerbackgroundimage.jpg)
+        
 }
 
+
+  
+
+.pic:hover{
+     width: 40px;
+      height: 40px;
+}
 
 @media screen and (max-width:640px) {
 
@@ -186,11 +194,11 @@ main p:first-child::first-letter {
     }
             .noprint {
                 visibility: hidden;
+                
+           
             }
             
             
             
         }
     
-
-}
