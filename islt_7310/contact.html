@@ -65,23 +65,22 @@ Validation Date: April 26, 2020 -->
         </div>
     
 <section>
-  <h2>Lets connect!</h2>
-  <p>Contact me using the form below,  email me at <a href="mailto:galkowskimary@gmail.com">galkowskimary@gmail.com</a></p>
+  <h2>Lets connect! Send e-mail to galkowskimary@gmail.com:</h2>
   
-  <form name="form1" method="post" action="formmail.php">
-    <span id="nameTextField">
-      <label for="name"></label>
-      <input type="text" name="name" id="name">Full Name</span>
-      <p><span id="emailTextField"></span></p>
-    <label for="email"></label>
-    <input type="text" name="email" id="email">A valid email is required.
-    <p><span id="messageTextArea">
-    <label for="message"></label>
-    <textarea name="message" id="message" cols="45" rows="5"></textarea>Please enter your message.</span></p>
-    <p>
-      <input type="submit" name="Submit" id="Submit" value="Submit">
-    </p>
-  </form>
+  
+  <form action="mailto:galkowskimary@gmail.com?subject=Portfolio%20Website%20Contact" method="post" enctype="text/plain">
+First Name:<br>
+<input type="text" id="name"><br>
+    Last Name:<br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="mail"><br>
+Message:<br>
+<input type="text" name="message" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
+
     
     
       
