@@ -65,6 +65,7 @@ footer {
     font-size: 10pt;
     border-top-style: solid;
     padding:5px;
+    padding-top: 50px;
     
         
    
@@ -151,6 +152,57 @@ main p:first-child::first-letter {
       height: 40px;
 }
 
+tr{
+    color:cadetblue;
+    width:auto;
+}
+
+.middle{
+    color:black;
+}
+
+table{
+   border: 2px solid magenta;
+    border-collapse: collapse;
+    column-width: auto;
+    margin:0 auto;
+}
+
+th, td{
+    border: 2px solid magenta;
+    padding: .2em .7em;
+}
+
+th:first-child, td:first-child{
+    text-align: left;
+}
+tbody tr:nth-child(even) {
+    background-color: lightgrey;
+}
+tbody tr:nth-child(odd) {
+    background-color: lightyellow;
+}
+
+figure, figcaption{
+    margin:0 auto;
+    padding:0 auto;
+   
+}
+
+figure{
+    border:2px solid magenta;
+    width: 400px;
+    padding: 15px;
+ 
+}
+
+figcaption{
+    display:block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 120%;
+    padding-bottom: .25em;
+}
 @media screen and (max-width:640px) {
 
     img {
@@ -159,11 +211,13 @@ main p:first-child::first-letter {
         margin-left: auto;
     }
     h1 {
-        margin:auto;
+        margin:auto 0;
         padding:inherit;
         width:800px;
     }
-    
+    .pic{
+        width: 10px;
+    }
 }
 
 
@@ -202,3 +256,22 @@ main p:first-child::first-letter {
             
         }
     
+@media only screen and (max-width: 479px) {
+    th,td{
+        display: block;
+    }
+    thead{
+        display:none;
+    }
+    tr td:first-child {
+        font-weight: bold;
+        font-size: 110%;
+    }
+    tbody td {
+        border-bottom-style: none;
+        
+    }
+    tfoot {
+        border:none;
+    }
+}
